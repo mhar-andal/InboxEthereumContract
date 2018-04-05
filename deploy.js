@@ -2,9 +2,11 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
+require('dotenv').config();
+
 const provider = new HDWalletProvider(
-  'add phrase seed here',
-  'insert wallet provider here through infura'
+  process.env.MNEMONIC,
+  process.env.PROVIDER_URI
 );
 const web3 = new Web3(provider);
 
