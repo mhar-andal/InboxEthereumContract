@@ -2,7 +2,7 @@ Simple Ethereum Contract that test basic functionality of a Smart Contract inter
 
 ## Instructions to deploy
 
-1.  Generate your wallet and 12 word phrase
+1.  Generate your wallet and 12 word phrase using metamask
 
 2.  Head over to `deploy.js` and update the `HDWalletProvider` arguments to include your phrase as well as a proxy link using https://infura.io
 
